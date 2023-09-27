@@ -1,0 +1,14 @@
+commonCommands:
+  whereis:
+    usage: whereis g++
+    desc: find program path
+  which:
+    usage: which g++
+    desc: find program path
+compilers:
+  commands:
+    - g++ -Wall -Wextra -Werror -c main.cpp -o main.o
+    - g++ main.cpp -o program2 && ./program2
+    - g++ main.cpp -o program2 && ./outputs/program
+    - g++ *.cpp -o output
+    - g++ *.cpp -o outputs/main.o && outputs/main.o 
