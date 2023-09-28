@@ -22,3 +22,11 @@ services:
         limits:
           cpus: '0.75'
           memory: '1.5GB'
+
+  server: # Banco de dados
+   image: ubuntu
+   deploy:
+      resources:
+        limits:
+          cpus: '0.75'
+          memory: '1.5GB'

@@ -1,0 +1,8 @@
+install:
+  rustup: 
+    - curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+  cargo:
+    - cargo build
+    - cargo build --release
+    - cargo run 
+    - cargo check
