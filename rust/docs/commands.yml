@@ -6,3 +6,6 @@ install:
     - cargo build --release
     - cargo run 
     - cargo check
+    - "cannot find Scrt1.o: No such file or directory" -> sudo apt install gcc-multilib
+      - https://stackoverflow.com/questions/6329887/how-to-fix-linker-error-cannot-find-crt1-o
+    
